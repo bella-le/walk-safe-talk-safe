@@ -25,14 +25,35 @@ i'm like a tiny 5'1" girl and you know, sometimes i just happen to be in a shady
 * If you start the call on a gendered name, the voice will change to the appropriate gendered voice.
 
 ## Installation
+### Requirements
+* A [Twilio](https://twilio.com/) account
+* An [ngrok](ngrok.com) account
+* An [OpenAI](https://platform.openai.com/) account
+* An [ElevenLabs](https://elevenlabs.io/) account
+
+### Installation steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/project-name.git
+   git clone https://github.com/bella-le/walk-safe-talk-safe.git
    ```
 2. Install dependencies:
     * Download Vosk model here: https://alphacephei.com/vosk/models
     * `pip3 install -r requirements.txt`
-3. Setup your `.env` file and include relevant API keys.
+3. Setup your `.env` file and include relevant API keys:
+    ```bash
+    # https://console.twilio.com
+    TWILIO_ACCOUNT_SID=
+    TWILIO_AUTH_TOKEN=
+
+    # https://dashboard.ngrok.com/get-started/your-authtoken
+    NGROK_AUTH_TOKEN=
+
+    # https://platform.openai.com/account/api-keys
+    OPENAI_API_KEY=
+
+    # https://elevenlabs.io
+    ELEVENLABS_API_KEY=
+    ```
 
 ## Usage
 1. Run the script at `python3 ai_phone_call.py` 
