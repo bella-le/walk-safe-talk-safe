@@ -3,3 +3,4 @@
 
 # Ignore vosk model
 vosk-model-en-us-0.22/
+__pycache__/

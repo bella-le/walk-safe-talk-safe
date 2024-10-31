@@ -38,7 +38,10 @@ i'm like a tiny 5'1" girl and you know, sometimes i just happen to be in a shady
    ```
 2. Install dependencies:
     * Download Vosk model here: https://alphacephei.com/vosk/models
-    * `pip3 install -r requirements.txt`
+    * Run the following commands:
+        * `python -m venv .venv`
+        * `source .venv/bin/activate`
+        * `pip3 install -r requirements.txt`
 3. Setup your `.env` file and include relevant API keys:
     ```bash
     # https://console.twilio.com
